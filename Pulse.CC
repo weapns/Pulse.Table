@@ -1,32 +1,32 @@
  getgenv().Pulse = {
-    ['Key'] = {'YOURKEYHERE'};
+    ['Key'] = {'YOURKEYHERE'}; 
 
-    ['Silent Aim'] = {
-        ['Settings']    = {['Enabled'] = true, ['Hit Chance'] = 100};
+['Silent Aim'] = {
+        ['Settings']    = {['Enabled'] = true, ['Hit Chance'] = 444};
         ['Keybind']     = {['Enabled'] = true, ['Key'] = 't', ['Notification'] = true};
-        ['Prediction']  = {['Enabled'] = true, ['Auto Prediction'] = true, ['Prediction'] = 0.243};
+        ['Prediction']  = {['Enabled'] = true, ['Auto Prediction'] = true, ['Prediction'] = 0.125};
         ['Hit Part']    = {['Nearest Point'] = true, ['Hit Part'] = 'HumanoidRootPart'};
     };
 
     ['Camera Lock'] = {
-        ['Settings']    = {['Enabled'] = false, ['Third Person'] = true, ['First Person'] = true};
-        ['Keybind']     = {['Hold'] = false, ['Mode'] = 'Keybind', ['Key'] = 'c', ['Mousebind'] = Enum.UserInputType.MouseButton2};
-        ['Prediction']  = {['Enabled'] = true, ['Prediction'] = 0.145};
-        ['Style']       = {['First Style'] = 'Sine', ['Second Style'] = 'Sine'};
-        ['Smoothness']  = {['Enabled'] = true, ['Smoothness'] = 0.184, ['Air Shot Smoothness'] = 0.345};
+        ['Settings']    = {['Enabled'] = true, ['Third Person'] = false, ['First Person'] = true};
+        ['Keybind']     = {['Hold'] = false, ['Mode'] = 'Keybind', ['Key'] = 'C', ['Mousebind'] = Enum.UserInputType.MouseButton2};
+        ['Prediction']  = {['Enabled'] = true, ['Prediction'] = 0.155};
+        ['Style']       = {['First Style'] = 'Elastic', ['Second Style'] = 'Elastic'};
+        ['Smoothness']  = {['Enabled'] = true, ['Smoothness'] = 0.0777, ['Air Shot Smoothness'] = 0.0382};
         ['Shake']       = {['Enabled'] = false, ['Direction'] = {['X'] = 8, ['Y'] = 6, ['Z'] = 7}};
-        ['Hit Part']    = {['Nearest Part'] = true, ['Air Shot Part'] = false, ['Parts'] = {['Default'] = 'HumanoidRootPart', ['Air Shot'] = 'HumanoidRootPart'}};
+        ['Hit Part']    = {['Nearest Part'] = false, ['Air Shot Part'] = false, ['Parts'] = {['Default'] = 'HumanoidRootPart', ['Air Shot'] = 'HumanoidRootPart'}};
         ['Auto Unlock'] = {['If Typing'] = false, ['If Reloading'] = false};
     };
 
     ['Trigger Bot'] = {
-        ['Settings'] = {['Enabled'] = false, ['Notification'] = false, ['Delay'] = 0.065};
-        ['Keybind']  = {['Enabled'] = true, ['Key'] = 'L'}
+        ['Settings'] = {['Enabled'] = true, ['Notification'] = false, ['Delay'] = 0.015};
+        ['Keybind']  = {['Enabled'] = true, ['Key'] = 'z'}
     };
 
     ['FoV'] = {
-        ['Silent Aim']  = {['Visible'] = true, ['Radius'] = {['Use'] = true, ['Amount'] = 50,}, ['Stick'] = true};
-        ['Camera Lock'] = {['Visible'] = true, ['Radius'] = {['Use'] = true, ['Amount'] = 55}, ['Stick'] = true};
+        ['Silent Aim']  = {['Visible'] = false, ['Radius'] = {['Use'] = true, ['Amount'] = 25,}, ['Stick'] = true};
+        ['Camera Lock'] = {['Visible'] = false, ['Radius'] = {['Use'] = true, ['Amount'] = 35}, ['Stick'] = false};
 
         ['Weapon FoV']  = {
             ['Enabled']           = false;
@@ -58,7 +58,7 @@
         };
 
         ['Fake Lag Spike'] = {
-            ['Enabled']  = true;
+            ['Enabled']  = false;
             ['Keybind']  = 'B';
             ['Duration'] = 1;           
         };
@@ -71,16 +71,16 @@
         };
 
         ['Frame Skip'] = {
-            ['Enabled']      = true;
-            ['Keybind']      = 'z';
+            ['Enabled']      = false;
+            ['Keybind']      = 'j';
             ['Use Keybind']  = true;
             ['Notification'] = false;
         };
 
         ['Auto 360'] = {
-            ['Enabled']   = false;
-            ['Keybind']   = 'Q';
-            ['Speed']     = 1;
+            ['Enabled']   = true;
+            ['Keybind']   = 'V';
+            ['Speed']     = 10;
         };
 
         ['Memory Spoof'] = {
@@ -92,10 +92,10 @@
 
         ['Sort Inventory'] = {
             ['Enabled'] = false;
-            ['Keybind'] = Enum.KeyCode.H;
-            ['Tool 1']  = '[Knife]';
+            ['Keybind'] = Enum.KeyCode.X;
+            ['Tool 1']  = '[Double-Barrel SG]';
             ['Tool 2']  = '[Revolver]';
-            ['Tool 3']  = '[Double-Barrel SG]';
+            ['Tool 3']  = '[Cookie]';
             ['Tool 4']  = '[Chicken]';
             ['Tool 5']  = '[Chicken]';
             ['Tool 6']  = '[Pizza]';
@@ -106,14 +106,14 @@
         };
 
         ['Animation Keybinds'] = {
-            ['Lay']    = {['Enabled'] = true, ['Keybind'] = Enum.KeyCode.T};
-            ['Greet']  = {['Enabled'] = true, ['Keybind'] = Enum.KeyCode.G};
+            ['Lay']    = {['Enabled'] = false, ['Keybind'] = Enum.KeyCode.T};
+            ['Greet']  = {['Enabled'] = false, ['Keybind'] = Enum.KeyCode.G};
             ['Speed']  = {['Enabled'] = false, ['Keybind'] = Enum.KeyCode.N};
             ['Sturdy'] = {['Enabled'] = false, ['Keybind'] = Enum.KeyCode.H};
             ['Griddy'] = {['Enabled'] = false, ['Keybind'] = Enum.KeyCode.G};
         };
         ['Range Fov'] = {
-            ['Distances'] = {['Close'] = 15, ['Mid'] = 100, ['Far'] = 9e9,};
+            ['Distances'] = {['Close'] = 10, ['Mid'] = 100, ['Far'] = 9e9,};
             ['Fov'] = {['Close'] = 25, ['Mid'] = 10, ['Far'] = 5,};
         };
         ['Chat Commands'] = {
@@ -127,4 +127,4 @@
         };
     };
 --
-loadstring(game:HttpGet("https://raw.githubusercontent.com/weapns/Pulse/main/Pulse.cc"))
+loadstring(game:HttpGet("https://raw.githubusercontent.com/weapns/Pulse/main/Pulse.cc"))();
